@@ -3,8 +3,8 @@ package main.com.model;
 public class Player implements PlayerAction {
 	private PlayerAttributes attributes;
 	
-	public Player(int healthPoints, int attackPoints, int strengthPoints, String playername) {
-			this.attributes =new PlayerAttributes(healthPoints, attackPoints, strengthPoints, playername);
+	public Player( String playername, int healthPoints, int attackPoints, int strengthPoints) {
+			this.attributes =new PlayerAttributes( playername, healthPoints, attackPoints, strengthPoints);
 	}
 	@Override
 	public void attack(Player opponent, Dice dice) {

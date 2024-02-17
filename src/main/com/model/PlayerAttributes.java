@@ -7,19 +7,24 @@ package main.com.model;
  * This Class will have statistics of player's profile
  */
 public class PlayerAttributes {
+	private String playername;
 	private int healthPoints;
 	private int attackPoints;
 	private int strengthPoints;
-	private String playername;
+	
 	//constructor
-	public PlayerAttributes(int healthPoints, int attackPoints, int strengthPoints, String playername) {
+	public PlayerAttributes(String playername,int healthPoints, int attackPoints, int strengthPoints ) {
+		this.playername=playername;
 		this.healthPoints=healthPoints;
 		this.attackPoints=attackPoints;
 		this.strengthPoints=strengthPoints;
-		this.playername=playername;
+		
 	}
 	
 	//getters
+	public String getPlayerName() {
+		return this.playername;
+	}
 	public int getHealthPoints() {
 		return this.healthPoints;
 	}
@@ -29,12 +34,14 @@ public class PlayerAttributes {
 	public int getStrengthPoints() {
 		return this.strengthPoints;
 	}
-	public String getPlayerName() {
-		return this.playername;
-	}
+	
 	
 	
 	//setters with prevention for value bounds
+	public void setPlayername(String playername) {
+		this.playername=playername;
+	}
+	
 	public void setHealthPoints(int healthPoints) {
 		this.healthPoints = healthPoints;
 		
@@ -54,7 +61,5 @@ public class PlayerAttributes {
 		System.out.println("Strength Points Can't be negative value");
 	}
 	
-	public void setPlayername(String playername) {
-		this.playername=playername;
-	}
+	
 }
