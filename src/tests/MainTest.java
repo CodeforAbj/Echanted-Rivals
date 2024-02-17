@@ -18,17 +18,25 @@ public class MainTest {
 		 Required fields and data types
 		 String playername, int healthPoints, int attackPoints, int strengthPoints
 	*/		
+		// Test for normal Values
 		
+		String normalInput = String.format("%s%n%d%n%d%n%d%n", "Tester",  100, 10, 20);
+		System.out.println("Testing for Normal attributes");
+		testMainRegister(normalInput);
 		// Tests Negative Attributes
-		test_Negative_Input_MainRegister(); 
+		// First Negative Values are provided then correct value to check what final object will have
+		String nagativeInput = String.format("%s%n%d%n%d%n%d%n%d%n%d%n%d%n", "Tester", -100, 100, -10, 10, -20, 20);
+		System.out.println("Testing for negatives attributes");
+		testMainRegister(nagativeInput); 
+		
 		// Tests if Attributes with zero value accepted or not
-
+		String zeroInput = String.format("%s%n%d%n%d%n%d%n%d%n%d%n%d%n", "Tester", 0, 100, 0, 10, 0, 20);
+		System.out.println("Testing for zero value attributes");
+		testMainRegister(zeroInput);
 	}
 
-	private static void test_Negative_Input_MainRegister() {
-		System.out.println("Testing for negatives attributes");
-		// First Negative Values are provided then correct value to check what final object will have
-		String input = String.format("%s%n%d%n%d%n%d%n%d%n%d%n%d%n", "Tester", -100, 100, -10, 10, -20, 20);
+	private static void testMainRegister(String input) {
+		
 		
 		boolean flag = true; // To check if any test failed
 		// Mocking Userinput 
