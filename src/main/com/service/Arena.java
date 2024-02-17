@@ -33,23 +33,30 @@ public class Arena {
 			
 			playerOne.attack(playerTwo, dice);
 			if(playerTwo.getHealth()<=0) {
+				System.out.println("[--------------------]");
 				System.out.println(playerOne.getName()+" Wins !");
+				System.out.println("[--------------------]");
 				break;
 			}
 			else {
 				System.out.println(playerTwo.getName()+"'s healthPoints = "+playerTwo.getHealth());
 			}
 			
+			System.out.println("*****"); // Aesthetic line change for Output 
+			
 			// Attack of Player Two
 			
 			playerTwo.attack(playerOne, dice);
 			if(playerOne.getHealth()<=0) {
+				System.out.println("[--------------------]");
 				System.out.println(playerTwo.getName()+" Wins !");
+				System.out.println("[--------------------]");
 				break;
 			}
 			else {
 				System.out.println(playerOne.getName()+"'s healthPoints = "+playerOne.getHealth());
 			}
+			System.out.println("*****");
 		}
 	}
 }
