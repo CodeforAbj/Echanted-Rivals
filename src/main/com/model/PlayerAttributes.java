@@ -9,12 +9,14 @@ package main.com.model;
 public class PlayerAttributes {
 	private int healthPoints;
 	private int attackPoints;
-	private int defencePoints;
+	private int strengthPoints;
+	private String playername;
 	//constructor
-	public PlayerAttributes(int healthPoints, int attackPoints, int defencePoints) {
+	public PlayerAttributes(int healthPoints, int attackPoints, int strengthPoints, String playername) {
 		this.healthPoints=healthPoints;
 		this.attackPoints=attackPoints;
-		this.defencePoints=defencePoints;
+		this.strengthPoints=strengthPoints;
+		this.playername=playername;
 	}
 	
 	//getters
@@ -24,9 +26,13 @@ public class PlayerAttributes {
 	public int getAttackPoints() {
 		return this.attackPoints;
 	}
-	public int getDefencePoints() {
-		return this.defencePoints;
+	public int getStrengthPoints() {
+		return this.strengthPoints;
 	}
+	public String getPlayerName() {
+		return this.playername;
+	}
+	
 	
 	//setters with prevention for value bounds
 	public void setHealthPoints(int healthPoints) {
@@ -43,11 +49,14 @@ public class PlayerAttributes {
 		System.out.println("Attack Points Can't be negative value");
 	}
 
-	public void setDefencePoints(int defencePoints) {
-	    if(defencePoints>=0)
-		this.defencePoints = defencePoints;
+	public void setStrengthPoints(int strengthPoints) {
+	    if(strengthPoints>=0)
+		this.strengthPoints = strengthPoints;
 		else
-		System.out.println("Defence Points Can't be negative value");
+		System.out.println("Strength Points Can't be negative value");
 	}
-
+	
+	public void setPlayername(String playername) {
+		this.playername=playername;
+	}
 }
