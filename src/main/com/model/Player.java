@@ -42,5 +42,14 @@ public class Player implements PlayerAction {
 	public String getName() {
 		return this.attributes.getPlayerName();
 	}
+	
+	// Following two classes are used in Tests
+	public int getAttackPoints() {
+		return this.attributes.getAttackPoints();
+	}
+	public int getStrengthPoints() {
+		return this.attributes.getStrengthPoints();
+	}
 
+		
 }
