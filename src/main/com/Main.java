@@ -25,6 +25,8 @@ public class Main {
 		Arena newArena = new Arena(playerOne,playerTwo,D6);
 		newArena.startMatch();
 		System.out.println("[---------- Thank You for Playing !! ----------]");
+		
+		s.close();
 	}
 	
 	public static Player register(Scanner s) {
