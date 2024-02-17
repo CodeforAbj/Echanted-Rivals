@@ -19,10 +19,10 @@ public class MainTest {
 		 String playername, int healthPoints, int attackPoints, int strengthPoints
 	*/		
 		// Test for normal Values
-		
 		String normalInput = String.format("%s%n%d%n%d%n%d%n", "Tester",  100, 10, 20);
 		System.out.println("Testing for Normal attributes");
 		testMainRegister(normalInput);
+		
 		// Tests Negative Attributes
 		// First Negative Values are provided then correct value to check what final object will have
 		String nagativeInput = String.format("%s%n%d%n%d%n%d%n%d%n%d%n%d%n", "Tester", -100, 100, -10, 10, -20, 20);
