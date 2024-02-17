@@ -30,18 +30,43 @@ public class Main {
 	public static Player register(Scanner s) {
 		
 		System.out.println("Enter the Name of Player");
-		String playerName = s.next();
+		String playerName = s.nextLine();
+		
+		// For ensuring that name is not empty
+		while (playerName.isEmpty()) {
+            System.out.println("Nothing Entered. Please enter the name of the player:");
+            playerName = s.nextLine();
+        }
 		
 		System.out.println("Enter Health Points of " + playerName );
 		int playerHealth = s.nextInt();
 		
+		// For ensuring the input for health is positive always
+		while(playerHealth<=0) {
+			System.out.println("Health can't be less than or equal to zero. Enter again ");
+			playerHealth = s.nextInt();
+		}
+		
+		
 		System.out.println("Enter Attack Points of " + playerName );
 		int playerAttack = s.nextInt();
+		
+		// For ensuring the input for attack points is positive always
+		while(playerAttack<=0) {
+			System.out.println("Health can't be less than or equal to zero. Enter again ");
+			playerAttack = s.nextInt();
+		}
 		
 		System.out.println("Enter Strength points of " + playerName );
 		int playerStrength = s.nextInt();
 		
-		Player player = new Player(playerHealth,playerAttack,playerStrength,playerName);
+		// For ensuring the input for attack points is positive always
+		while(playerStrength<=0) {
+			System.out.println("Health can't be less than or equal to zero. Enter again ");
+			playerStrength = s.nextInt();
+		}
+		
+		Player player = new Player(playerName,playerHealth,playerAttack,playerStrength);
 		return player;
 	}
 
