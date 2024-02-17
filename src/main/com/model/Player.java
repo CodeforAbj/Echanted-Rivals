@@ -36,5 +36,11 @@ public class Player implements PlayerAction {
 		
 	}
 	
+	public int getHealth() {
+		return this.attributes.getHealthPoints();
+	}
+	public String getName() {
+		return this.attributes.getPlayerName();
+	}
 
 }

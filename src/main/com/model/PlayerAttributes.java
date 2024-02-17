@@ -36,10 +36,8 @@ public class PlayerAttributes {
 	
 	//setters with prevention for value bounds
 	public void setHealthPoints(int healthPoints) {
-		if(healthPoints>=0)
-	    this.healthPoints = healthPoints;
-		else
-		System.out.println("Health Can't be negative value");
+		this.healthPoints = healthPoints;
+		
 	}
 
 	public void setAttackPoints(int attackPoints) {
