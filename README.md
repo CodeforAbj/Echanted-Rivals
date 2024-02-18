@@ -1,8 +1,7 @@
 
 # Magical Arena
 
-This Java project simulates a Magical Arena where Two players engage in one on one battle in which they attack turn wise until one player dies. Each player is characterized by their name, health, strength, and attack attributes, all of which are positive integers.
-
+This Java project simulates a Magical Arena where Two players engage in one on one battle in which they attack turn wise until one player dies. Each player is characterized by their name, health, strength, and attack attributes.
 
 
 ## Table of Contents
