@@ -33,6 +33,11 @@ public class MainTest {
 		String zeroInput = String.format("%s%n%d%n%d%n%d%n%d%n%d%n%d%n", "Tester", 0, 100, 0, 10, 0, 20);
 		System.out.println("Testing for zero value attributes");
 		testMainRegister(zeroInput);
+		
+		// Wrong Type of input test
+		String wrongTypeInput = String.format("%s%n%s%n%d%n%s%n%d%n%s%n%d%n", "Tester", "A", 100,"B", 10,"C", 20);
+		System.out.println("Testing for String value in Integer attributes");
+		testMainRegister(wrongTypeInput);
 	}
 
 	private static void testMainRegister(String input) {
