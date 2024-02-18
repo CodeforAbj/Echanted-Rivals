@@ -41,6 +41,13 @@ public class Main {
         }
 		
 		System.out.println("Enter Health Points of " + playerName );
+	  
+		// Safety for wrong input type
+		while (!s.hasNextInt()) {
+            System.out.println("Invalid input. Please enter an integer.");
+            s.next(); // To ignore the invalid input
+        }
+		
 		int playerHealth = s.nextInt();
 		
 		// For ensuring the input for health is positive always
@@ -51,7 +58,15 @@ public class Main {
 		
 		
 		System.out.println("Enter Attack Points of " + playerName );
+		
+		// Safety for wrong input type
+		while (!s.hasNextInt()) {
+		     System.out.println("Invalid input. Please enter an integer.");
+		     s.next(); // To ignore the invalid input
+		}
+		
 		int playerAttack = s.nextInt();
+		
 		
 		// For ensuring the input for attack points is positive always
 		while(playerAttack<=0) {
@@ -60,6 +75,12 @@ public class Main {
 		}
 		
 		System.out.println("Enter Strength points of " + playerName );
+		
+		// Safety for wrong input type
+		while (!s.hasNextInt()) {
+		  System.out.println("Invalid input. Please enter an integer.");
+		  s.next(); // To ignore the invalid input
+		}
 		int playerStrength = s.nextInt();
 		
 		// For ensuring the input for attack points is positive always
