@@ -52,7 +52,9 @@ public class Player implements PlayerAction {
 		return this.attributes.getPlayerName();
 	}
 	
-	// Following two classes are used in Tests primariliy
+	/* 
+	 * Following two methods are used in Tests primariliy
+	 */
 	public int getAttackPoints() {
 		return this.attributes.getAttackPoints();
 	}

@@ -37,7 +37,7 @@ public class PlayerAttributes {
 	
 	
 	
-	//setters with prevention for value bounds
+	//setters 
 	public void setPlayername(String playername) {
 		this.playername=playername;
 	}
@@ -48,14 +48,14 @@ public class PlayerAttributes {
 	}
 
 	public void setAttackPoints(int attackPoints) {
-		if(attackPoints>=0)
+		if(attackPoints>=0) //Prevention for negative values passed
 		this.attackPoints = attackPoints;
 		else
 		System.out.println("Attack Points Can't be negative value");
 	}
 
 	public void setStrengthPoints(int strengthPoints) {
-	    if(strengthPoints>=0)
+	    if(strengthPoints>=0) //Prevention for negative values passed
 		this.strengthPoints = strengthPoints;
 		else
 		System.out.println("Strength Points Can't be negative value");

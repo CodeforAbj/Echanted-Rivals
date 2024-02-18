@@ -1,8 +1,8 @@
 package main.com.model;
 
 public class Dice {
-	private int lowestDigit;  // for making special dices like lucky
-	private int highestDigit; // for making Different Dices
+	private int lowestDigit;  // To create dice which can have any start and end value
+	private int highestDigit; 
 	private int face;
 	
 	public Dice() {
