@@ -1,7 +1,7 @@
 
 # Enchanted Rivals
 
-This Java project simulates a Enchanted Rivals where Two players engage in one on one battle in which they attack turn wise until one player dies. Each player is characterized by their name, health, strength, and attack attributes.
+This Java project simulates a Dueling Arena Board Game where Two players engage in one on one battle in which they attack turn wise until one player dies. Each player is characterized by their name, health, strength, and attack attributes.
 
 
 ## Table of Contents
