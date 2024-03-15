@@ -1,7 +1,7 @@
 
-# Magical Arena
+# Enchanted Rivals
 
-This Java project simulates a Magical Arena where Two players engage in one on one battle in which they attack turn wise until one player dies. Each player is characterized by their name, health, strength, and attack attributes.
+This Java project simulates a Enchanted Rivals where Two players engage in one on one battle in which they attack turn wise until one player dies. Each player is characterized by their name, health, strength, and attack attributes.
 
 
 ## Table of Contents
@@ -38,22 +38,22 @@ This Java project simulates a Magical Arena where Two players engage in one on o
 Go to the project directory
 
 ```bash
-  cd MagicalArena\output
+  cd "Enchanted Rivals\output"
 ```
 
 Run the jar file in cmd
 
 ```bash
- java -jar MagicalArena.jar
+ java -jar "Enchanted Rivals.jar"
 ```
 
 
 ## Example
 ```
-PS E:\Programming stuff\Projects\MagicalArena\output> java -jar MagicalArena.jar
+PS E:\Programming stuff\Projects\Enchanted Rivals\output> java -jar 'Enchanted Rivals.jar'
 ```
 ```
-[---------- Welcome to Magical Arena ----------]
+[---------- Welcome to Enchanted Rivals ----------]
 [---------- Register Player One ----------]
 Enter the Name of Player
 Tony
@@ -102,6 +102,8 @@ took 100 points of damage
 Tony Wins !
 [--------------------]
 [---------- Thank You for Playing !! ----------]
+[---------- Project by @codeforabj !! ----------]
+
 ```
 ## Class Responsibilities
 #### Main Class
